@@ -1,0 +1,25 @@
+# IDE files
+.vscode/
+.idea/
+.cursor/
+
+# Compiled files
+target/
+*.class
+
+# Logs
+logs/
+*.log
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs
+hs_err_pid*
+replay_pid* 
