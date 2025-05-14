@@ -1,7 +1,7 @@
-package com.solona.controller;
+package com.xps.solana.controller;
 
-import com.solona.model.TransactionInfo;
-import com.solona.service.SolanaService;
+import com.xps.solana.model.TransactionInfo;
+import com.xps.solana.service.SolanaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.solona.main;
+package com.xps.solana.main;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

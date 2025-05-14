@@ -1,4 +1,4 @@
-package com.solona.model;
+package com.xps.solana.model;
 
 import lombok.Data;
 

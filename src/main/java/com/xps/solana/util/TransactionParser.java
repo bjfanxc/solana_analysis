@@ -1,6 +1,6 @@
-package com.solona.util;
+package com.xps.solana.util;
 
-import com.solona.model.TransactionInfo;
+import com.xps.solana.model.TransactionInfo;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

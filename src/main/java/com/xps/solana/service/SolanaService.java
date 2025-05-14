@@ -1,7 +1,7 @@
-package com.solona.service;
+package com.xps.solana.service;
 
-import com.solona.model.TransactionInfo;
-import com.solona.util.TransactionParser;
+import com.xps.solana.model.TransactionInfo;
+import com.xps.solana.util.TransactionParser;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.fasterxml.jackson.databind.JsonNode;
