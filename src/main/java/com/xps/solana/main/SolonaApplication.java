@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.solona")
+@ComponentScan(basePackages = "com.xps.solana")
 public class SolonaApplication {
     private static final Logger logger = LoggerFactory.getLogger(SolonaApplication.class);
 
