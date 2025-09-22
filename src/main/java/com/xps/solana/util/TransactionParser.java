@@ -4,10 +4,12 @@ import com.xps.solana.model.TransactionInfo;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class TransactionParser {
 
     public static List<TransactionInfo> parseBlockTransactions(JsonObject blockData) {
@@ -40,6 +42,9 @@ public class TransactionParser {
                 JsonObject txData = transaction.getAsJsonObject("transaction");
                 if (txData.has("signatures") && txData.getAsJsonArray("signatures").size() > 0) {
                     txInfo.setSignature(txData.getAsJsonArray("signatures").get(0).getAsString());
+                    if (txInfo.getSignature().equals("4B9QM2akt6Wk2nBESTD8uYsL7xiEbpzym3xdCjY1yMhRi9FYXcnc8rc9at5fX68AdCKn64d7R1R92F7o6B2xHtFf")) {
+                        log.info("signatures: {}", transaction.toString());
+                    }
                 }
             }
             

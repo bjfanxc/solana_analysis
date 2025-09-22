@@ -109,7 +109,7 @@ public class SolanaService {
         try (Response response = client.newCall(request).execute()) {
             if (!response.isSuccessful()) throw new IOException("Unexpected response " + response);
             String responseBody = response.body().string();
-            log.info("responseBody: {}", responseBody);
+            //log.info("responseBody: {}", responseBody);
             JsonObject blockData = gson.fromJson(responseBody, JsonObject.class);
             return TransactionParser.parseBlockTransactions(blockData);
         }
